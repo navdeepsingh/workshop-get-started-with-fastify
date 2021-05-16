@@ -1,0 +1,222 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-05-16T13:04:14.564Z",
+  "__export_source": "insomnia.desktop.app:v2021.1.1",
+  "resources": [
+    {
+      "_id": "req_14f997ece81b426189994438309d9a7f",
+      "parentId": "fld_2fb3616001554771b442d5eee0b04e5f",
+      "modified": 1620743249910,
+      "created": 1620743115378,
+      "url": "http://localhost:3000/recipes",
+      "name": "/recipes (required fields, invalid)",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Tabbouleh\",\n\t\"ingredients\": \"parsley, 2 lemons, cucumber, bulgur\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_2081c3f58c08493e8a0740801adb1cca"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1620739116594,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_2fb3616001554771b442d5eee0b04e5f",
+      "parentId": "wrk_8cbe3670863e48d2b99e319c1cbdc0e0",
+      "modified": 1620739108433,
+      "created": 1620739108433,
+      "name": "Recipes",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1620739108433,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_8cbe3670863e48d2b99e319c1cbdc0e0",
+      "parentId": null,
+      "modified": 1620739070870,
+      "created": 1620739070870,
+      "name": "Workshop: Get Started with Fastify",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_ac09c801d1ca48e3827ffca4833f8fef",
+      "parentId": "fld_2fb3616001554771b442d5eee0b04e5f",
+      "modified": 1620743297286,
+      "created": 1620743259126,
+      "url": "http://localhost:3000/recipes",
+      "name": "/recipes (all fields, invalid)",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Tabbouleh\",\n\t\"ingredients\": [\n\t\t\"parsley\",\n\t\t\"2 lemons\",\n\t\t\"cucumber\",\n\t\t\"bulgur\"\n\t],\n\t\"time\": 0\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_2081c3f58c08493e8a0740801adb1cca"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1620739116569,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3979efd2bf284cf58595efb19e6f7a2a",
+      "parentId": "fld_2fb3616001554771b442d5eee0b04e5f",
+      "modified": 1620743206270,
+      "created": 1620739116544,
+      "url": "http://localhost:3000/recipes",
+      "name": "/recipes (required fields, valid)",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Tabbouleh\",\n\t\"ingredients\": [\n\t\t\"parsley\",\n\t\t\"2 lemons\",\n\t\t\"cucumber\",\n\t\t\"bulgur\"\n\t]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_2081c3f58c08493e8a0740801adb1cca"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1620739116544,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_5a4c55fa99644854b30a31da8df0cdc7",
+      "parentId": "fld_2fb3616001554771b442d5eee0b04e5f",
+      "modified": 1620743188410,
+      "created": 1620743188410,
+      "url": "http://localhost:3000/recipes",
+      "name": "/recipes (all fields, valid)",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Tabbouleh\",\n\t\"ingredients\": [\n\t\t\"parsley\",\n\t\t\"2 lemons\",\n\t\t\"cucumber\",\n\t\t\"bulgur\"\n\t],\n\t\"time\": 15\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_2081c3f58c08493e8a0740801adb1cca"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1617400484491.0625,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1f1e1c43d0344e6bb71881a938595865",
+      "parentId": "fld_2fb3616001554771b442d5eee0b04e5f",
+      "modified": 1620743465438,
+      "created": 1620743327991,
+      "url": "http://localhost:3000/recipes",
+      "name": "/recipes (extra fields, valid)",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Tabbouleh\",\n\t\"ingredients\": [\n\t\t\"parsley\",\n\t\t\"2 lemons\",\n\t\t\"cucumber\",\n\t\t\"bulgur\"\n\t],\n\t\"time\": 15,\n\t\"extra\": \"extra data\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_2081c3f58c08493e8a0740801adb1cca"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1617400484441.0625,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_ce58c59977953bc8ad757a1fbbf77a13a5d2c85d",
+      "parentId": "wrk_8cbe3670863e48d2b99e319c1cbdc0e0",
+      "modified": 1620739070992,
+      "created": 1620739070992,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1620739070992,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_ce58c59977953bc8ad757a1fbbf77a13a5d2c85d",
+      "parentId": "wrk_8cbe3670863e48d2b99e319c1cbdc0e0",
+      "modified": 1620739070997,
+      "created": 1620739070997,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_8d697355ba3c4777ab7f01365a491d4f",
+      "parentId": "wrk_8cbe3670863e48d2b99e319c1cbdc0e0",
+      "modified": 1620739070872,
+      "created": 1620739070872,
+      "fileName": "Workshop: Get Started with Fastify",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
