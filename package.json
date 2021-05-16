@@ -1,0 +1,9 @@
+{
+  "name": "workshop-get-started-with-fastify",
+  "private": "true",
+  "scripts": {
+    "postinstall": "npm install --prefix starter && npm install --prefix completed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}
