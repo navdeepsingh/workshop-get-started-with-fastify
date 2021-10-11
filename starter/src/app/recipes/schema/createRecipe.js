@@ -1,0 +1,26 @@
+const schema = {
+  type: "object",
+  required: ["name", "ingredients"],
+  properties: {
+    name: {
+      type: "string",
+      minLength: 1,
+      maxLength: 100,
+    },
+    ingredients: {
+      type: "array",
+      minItems: 1,
+      items: {
+        type: "string",
+        minLength: 1,
+        maxLength: 100,
+      },
+    },
+    time: {
+      type: "integer",
+      minimum: 1,
+    },
+  },
+};
+
+export default schema;

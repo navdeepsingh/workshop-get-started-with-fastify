@@ -1,5 +1,6 @@
 import Fastify from "fastify";
-import routes from "./routes.js";
+import * as FastifyCors from "fastify-cors";
+import routes from "./app/routes.js";
 export default async function buildApp() {
   const options = {
     logger: {
@@ -8,6 +9,10 @@ export default async function buildApp() {
     },
   };
   const fastify = Fastify(options);
-  fastify.register(routes, { prefix: "/recipes" });
+
+  // Register Plugins
+  fastify.register(routes);
+  fastify.register(FastifyCors);
+
   return fastify;
 }
