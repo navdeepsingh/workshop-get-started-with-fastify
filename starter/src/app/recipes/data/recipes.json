@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Tabbouleh",
+    "ingredients": ["parsley", "2 lemons", "cucumber", "bulgur"],
+    "time": 15
+  },
+  {
+    "name": "Pasta",
+    "ingredients": ["parsley", "2 lemons", "cucumber", "bulgur"],
+    "time": 30
+  }
+]
